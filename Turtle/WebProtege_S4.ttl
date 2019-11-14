@@ -1,0 +1,83 @@
+@prefix : <http://webprotege.stanford.edu/project/8rH9GFMM6Xfou7YRYAJ0U5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://webprotege.stanford.edu/project/8rH9GFMM6Xfou7YRYAJ0U5> .
+
+<http://webprotege.stanford.edu/project/8rH9GFMM6Xfou7YRYAJ0U5> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R916fzPGf0Pm6Z3YO9pJZ85
+<http://webprotege.stanford.edu/R916fzPGf0Pm6Z3YO9pJZ85> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:label "isInterpretedBy" .
+
+
+###  http://webprotege.stanford.edu/R93vxw9TSCrTh2HmG3j7y5p
+<http://webprotege.stanford.edu/R93vxw9TSCrTh2HmG3j7y5p> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:label "belongsTo" .
+
+
+###  http://webprotege.stanford.edu/RFikZ9BZrONYZpOUUZw1H2
+<http://webprotege.stanford.edu/RFikZ9BZrONYZpOUUZw1H2> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:label "isDubbedBy" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R4LUbqa9jmDnYFThysIrgs
+<http://webprotege.stanford.edu/R4LUbqa9jmDnYFThysIrgs> rdf:type owl:Class ;
+                                                        rdfs:label "TV Show" .
+
+
+###  http://webprotege.stanford.edu/R9OkbIIlC3m6JoPRrGRNelx
+<http://webprotege.stanford.edu/R9OkbIIlC3m6JoPRrGRNelx> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R4LUbqa9jmDnYFThysIrgs> ;
+                                                         rdfs:label "American TV Serie" .
+
+
+###  http://webprotege.stanford.edu/R9Tji3070xbsFvtzrcUSJP4
+<http://webprotege.stanford.edu/R9Tji3070xbsFvtzrcUSJP4> rdf:type owl:Class ;
+                                                         rdfs:subClassOf owl:Thing ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R916fzPGf0Pm6Z3YO9pJZ85> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RBD9gvKpMWtZz1gioEDr1Tb>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R93vxw9TSCrTh2HmG3j7y5p> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9OkbIIlC3m6JoPRrGRNelx>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RFikZ9BZrONYZpOUUZw1H2> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RDbI7bfWFncsBVAQiHIDDK>
+                                                                         ] ;
+                                                         rdfs:label "Character" .
+
+
+###  http://webprotege.stanford.edu/RBD9gvKpMWtZz1gioEDr1Tb
+<http://webprotege.stanford.edu/RBD9gvKpMWtZz1gioEDr1Tb> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RtRrXkv33Md7WTMeIgwm3K> ;
+                                                         rdfs:label "Actor" .
+
+
+###  http://webprotege.stanford.edu/RDbI7bfWFncsBVAQiHIDDK
+<http://webprotege.stanford.edu/RDbI7bfWFncsBVAQiHIDDK> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RtRrXkv33Md7WTMeIgwm3K> ;
+                                                        rdfs:label "Dubbing Actor" .
+
+
+###  http://webprotege.stanford.edu/RtRrXkv33Md7WTMeIgwm3K
+<http://webprotege.stanford.edu/RtRrXkv33Md7WTMeIgwm3K> rdf:type owl:Class ;
+                                                        rdfs:label "Person" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

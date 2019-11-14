@@ -1,0 +1,105 @@
+@prefix : <http://webprotege.stanford.edu/project/Lik9lH3JipmZik0FVIN16#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://webprotege.stanford.edu/project/Lik9lH3JipmZik0FVIN16> .
+
+<http://webprotege.stanford.edu/project/Lik9lH3JipmZik0FVIN16> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://webprotege.stanford.edu/RfXGwEEqONszgTM8boeeKH
+<http://webprotege.stanford.edu/RfXGwEEqONszgTM8boeeKH> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "value" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R7b2ObjfsyB0BFQ20jN1Y3y
+<http://webprotege.stanford.edu/R7b2ObjfsyB0BFQ20jN1Y3y> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RVy5rRHRmflLNU7FhNXjyR> ;
+                                                         rdfs:label "hasValue" .
+
+
+###  http://webprotege.stanford.edu/R7wzcqaabVaZKwRKjxM7cwL
+<http://webprotege.stanford.edu/R7wzcqaabVaZKwRKjxM7cwL> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://webprotege.stanford.edu/R7wzcqaabVaZKwRKjxM7cwL> ,
+                                                                            owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R9Mxh6aug8R3Qyjt2l8SStI> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY> ;
+                                                         rdfs:label "hasUnemploymentRate"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCFjrYaOlpcFJUBU3EjdF3
+<http://webprotege.stanford.edu/RCFjrYaOlpcFJUBU3EjdF3> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RDVkBT27w86FSCAiKvwKAnw> ;
+                                                        rdfs:label "hasTrend" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R9Mxh6aug8R3Qyjt2l8SStI
+<http://webprotege.stanford.edu/R9Mxh6aug8R3Qyjt2l8SStI> rdf:type owl:Class ;
+                                                         rdfs:label "Country" .
+
+
+###  http://webprotege.stanford.edu/RDVkBT27w86FSCAiKvwKAnw
+<http://webprotege.stanford.edu/RDVkBT27w86FSCAiKvwKAnw> rdf:type owl:Class ;
+                                                         rdfs:subClassOf owl:Thing ;
+                                                         rdfs:label "Trend" .
+
+
+###  http://webprotege.stanford.edu/RVy5rRHRmflLNU7FhNXjyR
+<http://webprotege.stanford.edu/RVy5rRHRmflLNU7FhNXjyR> rdf:type owl:Class ;
+                                                        rdfs:label "UnemploymentRate" .
+
+
+###  http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY
+<http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY> rdf:type owl:Class ;
+                                                        rdfs:label "UnemploymentRateRelation"^^xsd:string .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R9KxS3ygEt0Vsad58SCbtP7
+<http://webprotege.stanford.edu/R9KxS3ygEt0Vsad58SCbtP7> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDVkBT27w86FSCAiKvwKAnw> ;
+                                                         rdfs:label "dropping" .
+
+
+###  http://webprotege.stanford.edu/RBDjQOHMB9gdzM931kucTRU
+<http://webprotege.stanford.edu/RBDjQOHMB9gdzM931kucTRU> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RVy5rRHRmflLNU7FhNXjyR> ;
+                                                         rdfs:label "high" .
+
+
+###  http://webprotege.stanford.edu/RDMManhtya9AvFfldJdWutD
+<http://webprotege.stanford.edu/RDMManhtya9AvFfldJdWutD> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9Mxh6aug8R3Qyjt2l8SStI> ;
+                                                         <http://webprotege.stanford.edu/R7wzcqaabVaZKwRKjxM7cwL> <http://webprotege.stanford.edu/RvyDo5vr63wvEOU4bNEGgL> ;
+                                                         rdfs:label "Spain" .
+
+
+###  http://webprotege.stanford.edu/RvyDo5vr63wvEOU4bNEGgL
+<http://webprotege.stanford.edu/RvyDo5vr63wvEOU4bNEGgL> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY> ;
+                                                        <http://webprotege.stanford.edu/R7b2ObjfsyB0BFQ20jN1Y3y> <http://webprotege.stanford.edu/RBDjQOHMB9gdzM931kucTRU> ;
+                                                        <http://webprotege.stanford.edu/RCFjrYaOlpcFJUBU3EjdF3> <http://webprotege.stanford.edu/R9KxS3ygEt0Vsad58SCbtP7> ;
+                                                        rdfs:label "UnemploymentRateRelation1" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

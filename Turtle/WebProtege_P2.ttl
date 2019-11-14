@@ -1,0 +1,138 @@
+@prefix : <http://webprotege.stanford.edu/project/LPwTdLwiSfli0gAraSVn7#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://webprotege.stanford.edu/project/LPwTdLwiSfli0gAraSVn7> .
+
+<http://webprotege.stanford.edu/project/LPwTdLwiSfli0gAraSVn7> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R3QNiDgksz6ORjs5LzgOsa
+<http://webprotege.stanford.edu/R3QNiDgksz6ORjs5LzgOsa> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "WeightChange"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R6uuwyWNUpDYj5OYPlk7Rx
+<http://webprotege.stanford.edu/R6uuwyWNUpDYj5OYPlk7Rx> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> ;
+                                                        rdfs:label "goingOnDietWithWeightChange"@en .
+
+
+###  http://webprotege.stanford.edu/RBNLZ1RKolcGv2Uay5w9nIf
+<http://webprotege.stanford.edu/RBNLZ1RKolcGv2Uay5w9nIf> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/R7EvI02ENcXzELrFRZKNb> ;
+                                                         rdfs:label "hasDiet"@en .
+
+
+###  http://webprotege.stanford.edu/RCv6gQV7Z0G98dG4cF1semj
+<http://webprotege.stanford.edu/RCv6gQV7Z0G98dG4cF1semj> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> ;
+                                                         rdfs:label "hasSister"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R7H59vweHJwESrb9ltfGdmK
+<http://webprotege.stanford.edu/R7H59vweHJwESrb9ltfGdmK> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> ;
+                                                         rdfs:range xsd:integer ;
+                                                         rdfs:label "WeightChange"^^xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R7EvI02ENcXzELrFRZKNb
+<http://webprotege.stanford.edu/R7EvI02ENcXzELrFRZKNb> rdf:type owl:Class ;
+                                                       rdfs:label "Diet"@en .
+
+
+###  http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ
+<http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> rdf:type owl:Class ;
+                                                         rdfs:label "Person"@en .
+
+
+###  http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx
+<http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> rdf:type owl:Class ;
+                                                         rdfs:subClassOf owl:Thing ;
+                                                         rdfs:label "DietWithWeightChange"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R7RYZcxrHPC4GJK5ammWygC
+<http://webprotege.stanford.edu/R7RYZcxrHPC4GJK5ammWygC> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7EvI02ENcXzELrFRZKNb> ;
+                                                         rdfs:label "Atkins"@en .
+
+
+###  http://webprotege.stanford.edu/R8USXLlSAMxMAQ5EtgJB8pk
+<http://webprotege.stanford.edu/R8USXLlSAMxMAQ5EtgJB8pk> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R7EvI02ENcXzELrFRZKNb> ;
+                                                         rdfs:label "Dukan"@en .
+
+
+###  http://webprotege.stanford.edu/R9yhcOhztHKJlDC9zoRjVga
+<http://webprotege.stanford.edu/R9yhcOhztHKJlDC9zoRjVga> rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "-5"@en .
+
+
+###  http://webprotege.stanford.edu/RBY2RyYS1PlnX6nDR95FX7F
+<http://webprotege.stanford.edu/RBY2RyYS1PlnX6nDR95FX7F> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> ;
+                                                         <http://webprotege.stanford.edu/RBNLZ1RKolcGv2Uay5w9nIf> <http://webprotege.stanford.edu/R8USXLlSAMxMAQ5EtgJB8pk> ;
+                                                         <http://webprotege.stanford.edu/R7H59vweHJwESrb9ltfGdmK> -5 ;
+                                                         rdfs:label "KateOnDietWeightChange"@en .
+
+
+###  http://webprotege.stanford.edu/RCtEufqB80PLz5pEOIgtJD3
+<http://webprotege.stanford.edu/RCtEufqB80PLz5pEOIgtJD3> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> ;
+                                                         <http://webprotege.stanford.edu/R6uuwyWNUpDYj5OYPlk7Rx> <http://webprotege.stanford.edu/RBY2RyYS1PlnX6nDR95FX7F> ;
+                                                         <http://webprotege.stanford.edu/RCv6gQV7Z0G98dG4cF1semj> <http://webprotege.stanford.edu/RDUiinwu1reVt6BfA4YsF8z> ;
+                                                         rdfs:label "Kate"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDIlHC11scjUiRcHF47Zium
+<http://webprotege.stanford.edu/RDIlHC11scjUiRcHF47Zium> rdf:type owl:NamedIndividual ;
+                                                         rdfs:label "+10"@en .
+
+
+###  http://webprotege.stanford.edu/RDUiinwu1reVt6BfA4YsF8z
+<http://webprotege.stanford.edu/RDUiinwu1reVt6BfA4YsF8z> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> ;
+                                                         <http://webprotege.stanford.edu/R6uuwyWNUpDYj5OYPlk7Rx> <http://webprotege.stanford.edu/RSG4ZJZZzOhFvk4Vsvy9Eh> ;
+                                                         <http://webprotege.stanford.edu/RCv6gQV7Z0G98dG4cF1semj> <http://webprotege.stanford.edu/RCtEufqB80PLz5pEOIgtJD3> ;
+                                                         rdfs:label "Kate's Sister"@en .
+
+
+###  http://webprotege.stanford.edu/RSG4ZJZZzOhFvk4Vsvy9Eh
+<http://webprotege.stanford.edu/RSG4ZJZZzOhFvk4Vsvy9Eh> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> ;
+                                                        <http://webprotege.stanford.edu/RBNLZ1RKolcGv2Uay5w9nIf> <http://webprotege.stanford.edu/R7RYZcxrHPC4GJK5ammWygC> ;
+                                                        <http://webprotege.stanford.edu/R7H59vweHJwESrb9ltfGdmK> 10 ;
+                                                        rdfs:label "KatesSisterOnDietWeigthChange"@en .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi

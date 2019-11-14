@@ -1,0 +1,82 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.3)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 8 ###
+#  --------------------------- Property 0------------------------- 
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:label "price"@en; 
+       rdfs:domain :OffersRoom;
+       rdfs:range xsd:double . 
+#  --------------------------- Property 1------------------------- 
+:roomID rdf:type owl:DatatypeProperty ;
+        rdfs:label "roomID"@en; 
+        rdfs:domain :OffersRoom;
+        rdfs:range xsd:string . 
+#  --------------------------- Property 2------------------------- 
+:offers rdf:type owl:ObjectProperty ;
+        rdfs:label "offersRoomRental"@en; 
+        rdfs:domain :Hotel;
+        rdfs:range :RoomRentalCustomerRelation . 
+#  --------------------------- Property 3------------------------- 
+:offeredTo rdf:type owl:ObjectProperty ;
+           rdfs:label "hasCustomer"@en; 
+           rdfs:domain :RoomRentalCustomerRelation;
+           rdfs:range :Customer . 
+#  --------------------------- Property 4------------------------- 
+:hasRoomRentalService rdf:type owl:ObjectProperty ;
+                      rdfs:label "hasRoomRentalService"@en; 
+                      rdfs:domain :RoomRentalCustomerRelation;
+                      rdfs:range :OffersRoom . 
+#  --------------------------- Property 5------------------------- 
+:hasTimePeriod rdf:type owl:ObjectProperty ;
+               rdfs:label "hasTimePeriod"@en; 
+               rdfs:domain :OffersRoom;
+               rdfs:range :TimePeriod . 
+#  --------------------------- Property 6------------------------- 
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:label "startTime"@en; 
+           rdfs:domain :TimePeriod;
+           rdfs:range xsd:string . 
+#  --------------------------- Property 7------------------------- 
+:endTime rdf:type owl:DatatypeProperty ;
+         rdfs:label "endTime"@en; 
+         rdfs:domain :TimePeriod;
+         rdfs:range xsd:string . 
+###  Class Definitions (Number of Classes) 6 ###
+#  --------------------------- Class  0------------------------- 
+:Hotel rdf:type owl:Class; 
+       rdfs:label "Hotel"@en . 
+#  --------------------------- Class  1------------------------- 
+:Person rdf:type owl:Class; 
+        rdfs:label "Person"@en . 
+#  --------------------------- Class  2------------------------- 
+:Customer rdf:type owl:Class; 
+          rdfs:subClassOf :Person ;
+          rdfs:label "Customer"@en . 
+#  --------------------------- Class  3------------------------- 
+:OffersRoom rdf:type owl:Class; 
+            rdfs:label "RoomRentalService"@en . 
+#  --------------------------- Class  4------------------------- 
+:RoomRentalCustomerRelation rdf:type owl:Class; 
+                            rdfs:label "RoomRentalCustomerRelation"@en . 
+#  --------------------------- Class  5------------------------- 
+:TimePeriod rdf:type owl:Class; 
+            rdfs:label "TimePeriod"@en . 

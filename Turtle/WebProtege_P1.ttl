@@ -1,0 +1,99 @@
+@prefix : <http://webprotege.stanford.edu/project/9HGoMmuH5ip8Ko4idgr11P#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://webprotege.stanford.edu/project/9HGoMmuH5ip8Ko4idgr11P> .
+
+<http://webprotege.stanford.edu/project/9HGoMmuH5ip8Ko4idgr11P> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/RByBtoNvkRzzmpu5oNvtGVk
+<http://webprotege.stanford.edu/RByBtoNvkRzzmpu5oNvtGVk> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/R9Emtz5XhDMCPWqz9rRxsuf> ;
+                                                         rdfs:label "hasCourse"@en .
+
+
+###  http://webprotege.stanford.edu/RzBzXlAS5OeNPEcb0ZznW6
+<http://webprotege.stanford.edu/RzBzXlAS5OeNPEcb0ZznW6> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/RDEUcpsM9Xb7C8tYNkcBsI4> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> ;
+                                                        rdfs:label "hasCourseResult"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R8FRJAfC1F80R1giXWvRCn
+<http://webprotege.stanford.edu/R8FRJAfC1F80R1giXWvRCn> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> ;
+                                                        rdfs:range xsd:integer ;
+                                                        rdfs:label "Mark"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt
+<http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> rdf:type owl:Class ;
+                                                         rdfs:label "CourseResults"@en .
+
+
+###  http://webprotege.stanford.edu/R9Emtz5XhDMCPWqz9rRxsuf
+<http://webprotege.stanford.edu/R9Emtz5XhDMCPWqz9rRxsuf> rdf:type owl:Class ;
+                                                         rdfs:label "Course"@en .
+
+
+###  http://webprotege.stanford.edu/RDEUcpsM9Xb7C8tYNkcBsI4
+<http://webprotege.stanford.edu/RDEUcpsM9Xb7C8tYNkcBsI4> rdf:type owl:Class ;
+                                                         rdfs:label "Student"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R7Qpyo4pgQvbhbKtjb7PiMr
+<http://webprotege.stanford.edu/R7Qpyo4pgQvbhbKtjb7PiMr> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> ;
+                                                         <http://webprotege.stanford.edu/RByBtoNvkRzzmpu5oNvtGVk> <http://webprotege.stanford.edu/RB0mi7XmgH5xvE8pwz310m1> ;
+                                                         <http://webprotege.stanford.edu/R8FRJAfC1F80R1giXWvRCn> "high"^^xsd:string ;
+                                                         rdfs:label "SusanCourseResult"@en .
+
+
+###  http://webprotege.stanford.edu/R89DhWozCuRXBBXDYg581xO
+<http://webprotege.stanford.edu/R89DhWozCuRXBBXDYg581xO> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> ;
+                                                         <http://webprotege.stanford.edu/RByBtoNvkRzzmpu5oNvtGVk> <http://webprotege.stanford.edu/RB0mi7XmgH5xvE8pwz310m1> ;
+                                                         <http://webprotege.stanford.edu/R8FRJAfC1F80R1giXWvRCn> "low"^^xsd:string ;
+                                                         rdfs:label "PeterCourseResult"@en .
+
+
+###  http://webprotege.stanford.edu/RB0mi7XmgH5xvE8pwz310m1
+<http://webprotege.stanford.edu/RB0mi7XmgH5xvE8pwz310m1> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R9Emtz5XhDMCPWqz9rRxsuf> ;
+                                                         rdfs:label "Italian"@en .
+
+
+###  http://webprotege.stanford.edu/RDJo76HLa9K9GnNvwZjB6ax
+<http://webprotege.stanford.edu/RDJo76HLa9K9GnNvwZjB6ax> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RDEUcpsM9Xb7C8tYNkcBsI4> ;
+                                                         <http://webprotege.stanford.edu/RzBzXlAS5OeNPEcb0ZznW6> <http://webprotege.stanford.edu/R7Qpyo4pgQvbhbKtjb7PiMr> ;
+                                                         rdfs:label "Susan"@en .
+
+
+###  http://webprotege.stanford.edu/RXk3opKkiITCMNFAaBLSOL
+<http://webprotege.stanford.edu/RXk3opKkiITCMNFAaBLSOL> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RDEUcpsM9Xb7C8tYNkcBsI4> ;
+                                                        <http://webprotege.stanford.edu/RzBzXlAS5OeNPEcb0ZznW6> <http://webprotege.stanford.edu/R89DhWozCuRXBBXDYg581xO> ;
+                                                        rdfs:label "Peter"@en .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
