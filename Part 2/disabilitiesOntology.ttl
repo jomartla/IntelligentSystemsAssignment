@@ -1,0 +1,157 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 20 ###
+#  --------------------------- Property 0------------------------- 
+:disablityType rdf:type owl:DatatypeProperty ;
+               rdfs:label "disablityType"@en; 
+               rdfs:domain :Disability;
+               rdfs:range xsd:string . 
+#  --------------------------- Property 1------------------------- 
+:isInherited rdf:type owl:DatatypeProperty ;
+             rdfs:label "isInherited"@en; 
+             rdfs:domain :Disability;
+             rdfs:range xsd:boolean . 
+#  --------------------------- Property 2------------------------- 
+:hasCure rdf:type owl:DatatypeProperty ;
+         rdfs:label "hasCure"@en; 
+         rdfs:domain :Disability;
+         rdfs:range xsd:boolean . 
+#  --------------------------- Property 3------------------------- 
+:degreeDisability rdf:type owl:DatatypeProperty ;
+                  rdfs:label "degreeDisability"@en; 
+                  rdfs:domain :Disability;
+                  rdfs:range xsd:string . 
+#  --------------------------- Property 4------------------------- 
+:objectProperty14 rdf:type owl:ObjectProperty ;
+                  rdfs:label "newObjectProperty"@en; 
+                  rdfs:domain :Person;
+                  rdfs:range :DisabilityRelation . 
+#  --------------------------- Property 5------------------------- 
+:hasSymptom rdf:type owl:ObjectProperty ;
+            rdfs:label "hasSymptom"@en; 
+            rdfs:domain :DisabilityRelation;
+            rdfs:range :Symptom . 
+#  --------------------------- Property 6------------------------- 
+:hasDisability rdf:type owl:ObjectProperty ;
+               rdfs:label "hasDisability"@en; 
+               rdfs:domain :DisabilityRelation;
+               rdfs:range :Disability . 
+#  --------------------------- Property 7------------------------- 
+:typeOfTreatment rdf:type owl:DatatypeProperty ;
+                 rdfs:label "typeOfTreatment"@en; 
+                 rdfs:domain :Treatment;
+                 rdfs:range xsd:string . 
+#  --------------------------- Property 8------------------------- 
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:label "duration"@en; 
+          rdfs:domain :Treatment;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 9------------------------- 
+:hasFinancialSupport rdf:type owl:ObjectProperty ;
+                     rdfs:label "hasFinancialSupport"@en; 
+                     rdfs:domain :Disability;
+                     rdfs:range :FinancialSupport . 
+#  --------------------------- Property 10------------------------- 
+:hasPhysicalSupport rdf:type owl:ObjectProperty ;
+                    rdfs:label "hasPhysicalSupport"@en; 
+                    rdfs:domain :Disability;
+                    rdfs:range :PhysicalSupport . 
+#  --------------------------- Property 11------------------------- 
+:typeOfStructure rdf:type owl:DatatypeProperty ;
+                 rdfs:label "typeOfStructure"@en; 
+                 rdfs:domain :PhysicalSupport;
+                 rdfs:range xsd:string . 
+#  --------------------------- Property 12------------------------- 
+:isPublic rdf:type owl:DatatypeProperty ;
+          rdfs:label "isPublic"@en; 
+          rdfs:domain :PhysicalSupport;
+          rdfs:range xsd:string . 
+#  --------------------------- Property 13------------------------- 
+:amountOfMoney rdf:type owl:DatatypeProperty ;
+               rdfs:label "amountOfMoney"@en; 
+               rdfs:domain :FinancialSupport;
+               rdfs:range xsd:double . 
+#  --------------------------- Property 14------------------------- 
+:periodicity rdf:type owl:DatatypeProperty ;
+             rdfs:label "periodicity"@en; 
+             rdfs:domain :FinancialSupport;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 15------------------------- 
+:typeOfSympom rdf:type owl:DatatypeProperty ;
+              rdfs:label "typeOfSymptom"@en; 
+              rdfs:domain :Symptom;
+              rdfs:range xsd:string . 
+#  --------------------------- Property 16------------------------- 
+:canBeAppliedTo rdf:type owl:ObjectProperty ;
+                rdfs:label "isAppliedTo"@en; 
+                rdfs:domain :PhysicalTreatment;
+                rdfs:range :Person . 
+#  --------------------------- Property 17------------------------- 
+:canBeAppliedTo rdf:type owl:ObjectProperty ;
+                rdfs:label "isAppliedTo"@en; 
+                rdfs:domain :MentalTreatment;
+                rdfs:range :Person . 
+#  --------------------------- Property 18------------------------- 
+:hasMentalTreatment rdf:type owl:ObjectProperty ;
+                    rdfs:label "hasMentalTreatment"@en; 
+                    rdfs:domain :Disability;
+                    rdfs:range :MentalTreatment . 
+#  --------------------------- Property 19------------------------- 
+:hasPhysicalTreatment rdf:type owl:ObjectProperty ;
+                      rdfs:label "hasPhysicalTreatment"@en; 
+                      rdfs:domain :Disability;
+                      rdfs:range :PhysicalTreatment . 
+###  Class Definitions (Number of Classes) 10 ###
+#  --------------------------- Class  0------------------------- 
+:Disability rdf:type owl:Class; 
+            rdfs:label "Disability"@en . 
+#  --------------------------- Class  1------------------------- 
+:Solution rdf:type owl:Class; 
+          rdfs:label "Supoport"@en . 
+#  --------------------------- Class  2------------------------- 
+:Person rdf:type owl:Class; 
+        rdfs:label "Person"@en . 
+#  --------------------------- Class  3------------------------- 
+:Treatment rdf:type owl:Class; 
+           rdfs:label "Treatment"@en . 
+#  --------------------------- Class  4------------------------- 
+:DisabilityRelation rdf:type owl:Class; 
+                    rdfs:label "DisabilityRelation"@en . 
+#  --------------------------- Class  5------------------------- 
+:Symptom rdf:type owl:Class; 
+         rdfs:label "Symptom"@en . 
+#  --------------------------- Class  6------------------------- 
+:PhysicalSupport rdf:type owl:Class; 
+                 rdfs:subClassOf :Solution ;
+                 rdfs:label "PhysicalSupport"@en . 
+#  --------------------------- Class  7------------------------- 
+:FinancialSupport rdf:type owl:Class; 
+                  rdfs:subClassOf :Solution ;
+                  rdfs:label "FinancialSupport"@en . 
+#  --------------------------- Class  8------------------------- 
+:PhysicalTreatment rdf:type owl:Class; 
+                   rdfs:subClassOf :Treatment ;
+                   rdfs:label "PhysicalTreatment"@en . 
+#  --------------------------- Class  9------------------------- 
+:MentalTreatment rdf:type owl:Class; 
+                 rdfs:subClassOf :Treatment ;
+                 rdfs:label "MentalTreatment"@en . 
