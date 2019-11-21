@@ -19,7 +19,7 @@
                                         dc:description "New ontology description"@en . 
 #################################################################
 
-###  Property Definitions (Number of Property) 20 ###
+###  Property Definitions (Number of Property) 27 ###
 #  --------------------------- Property 0------------------------- 
 :disablityType rdf:type owl:DatatypeProperty ;
                rdfs:label "disablityType"@en; 
@@ -77,7 +77,7 @@
                     rdfs:range :PhysicalSupport . 
 #  --------------------------- Property 11------------------------- 
 :typeOfStructure rdf:type owl:DatatypeProperty ;
-                 rdfs:label "typeOfStructure"@en; 
+                 rdfs:label "typeOfTechnology"@en; 
                  rdfs:domain :PhysicalSupport;
                  rdfs:range xsd:string . 
 #  --------------------------- Property 12------------------------- 
@@ -101,32 +101,67 @@
               rdfs:domain :Symptom;
               rdfs:range xsd:string . 
 #  --------------------------- Property 16------------------------- 
-:canBeAppliedTo rdf:type owl:ObjectProperty ;
-                rdfs:label "isAppliedTo"@en; 
-                rdfs:domain :PhysicalTreatment;
-                rdfs:range :Person . 
-#  --------------------------- Property 17------------------------- 
-:canBeAppliedTo rdf:type owl:ObjectProperty ;
-                rdfs:label "isAppliedTo"@en; 
-                rdfs:domain :MentalTreatment;
-                rdfs:range :Person . 
-#  --------------------------- Property 18------------------------- 
 :hasMentalTreatment rdf:type owl:ObjectProperty ;
                     rdfs:label "hasMentalTreatment"@en; 
                     rdfs:domain :Disability;
                     rdfs:range :MentalTreatment . 
-#  --------------------------- Property 19------------------------- 
+#  --------------------------- Property 17------------------------- 
 :hasPhysicalTreatment rdf:type owl:ObjectProperty ;
                       rdfs:label "hasPhysicalTreatment"@en; 
                       rdfs:domain :Disability;
                       rdfs:range :PhysicalTreatment . 
-###  Class Definitions (Number of Classes) 10 ###
+#  --------------------------- Property 18------------------------- 
+:isAppliedTo rdf:type owl:ObjectProperty ;
+             rdfs:label "isAppliedTo"@en; 
+             rdfs:domain :Treatment;
+             rdfs:range :Person . 
+#  --------------------------- Property 19------------------------- 
+:cause rdf:type owl:DatatypeProperty ;
+       rdfs:label "cause"@en; 
+       rdfs:domain :Disability;
+       rdfs:range xsd:string . 
+#  --------------------------- Property 20------------------------- 
+:hasEducationalSupport rdf:type owl:ObjectProperty ;
+                       rdfs:label "hasEducationalSupport"@en; 
+                       rdfs:domain :Disability;
+                       rdfs:range :EducationalSupport . 
+#  --------------------------- Property 21------------------------- 
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:label "lawDescription"@en; 
+             rdfs:domain :Law;
+             rdfs:range xsd:string . 
+#  --------------------------- Property 22------------------------- 
+:isSuportedBy rdf:type owl:ObjectProperty ;
+              rdfs:label "isSuportedBy"@en; 
+              rdfs:domain :Solution;
+              rdfs:range :Law . 
+#  --------------------------- Property 23------------------------- 
+:hasMedicalSupport rdf:type owl:ObjectProperty ;
+                   rdfs:label "hasMedicalSupport"@en; 
+                   rdfs:domain :Disability;
+                   rdfs:range :MedicalSupport . 
+#  --------------------------- Property 24------------------------- 
+:hasRightTo rdf:type owl:ObjectProperty ;
+            rdfs:label "hasRightTo"@en; 
+            rdfs:domain :MedicalSupport;
+            rdfs:range :Treatment . 
+#  --------------------------- Property 25------------------------- 
+:aidedEducationType rdf:type owl:DatatypeProperty ;
+                    rdfs:label "aidedEducationType"@en; 
+                    rdfs:domain :EducationalSupport;
+                    rdfs:range xsd:string . 
+#  --------------------------- Property 26------------------------- 
+:takesPlaceAt rdf:type owl:ObjectProperty ;
+              rdfs:label "takesPlaceAt"@en; 
+              rdfs:domain :EducationalSupport;
+              rdfs:range :EducationalInstitution . 
+###  Class Definitions (Number of Classes) 15 ###
 #  --------------------------- Class  0------------------------- 
 :Disability rdf:type owl:Class; 
             rdfs:label "Disability"@en . 
 #  --------------------------- Class  1------------------------- 
 :Solution rdf:type owl:Class; 
-          rdfs:label "Supoport"@en . 
+          rdfs:label "LegalSupport"@en . 
 #  --------------------------- Class  2------------------------- 
 :Person rdf:type owl:Class; 
         rdfs:label "Person"@en . 
@@ -142,7 +177,7 @@
 #  --------------------------- Class  6------------------------- 
 :PhysicalSupport rdf:type owl:Class; 
                  rdfs:subClassOf :Solution ;
-                 rdfs:label "PhysicalSupport"@en . 
+                 rdfs:label "TechonologicSupport"@en . 
 #  --------------------------- Class  7------------------------- 
 :FinancialSupport rdf:type owl:Class; 
                   rdfs:subClassOf :Solution ;
@@ -155,3 +190,21 @@
 :MentalTreatment rdf:type owl:Class; 
                  rdfs:subClassOf :Treatment ;
                  rdfs:label "MentalTreatment"@en . 
+#  --------------------------- Class  10------------------------- 
+:EducationalSupport rdf:type owl:Class; 
+                    rdfs:subClassOf :Solution ;
+                    rdfs:label "EducationalSupport"@en . 
+#  --------------------------- Class  11------------------------- 
+:Law rdf:type owl:Class; 
+     rdfs:label "Law"@en . 
+#  --------------------------- Class  12------------------------- 
+:MedicalSupport rdf:type owl:Class; 
+                rdfs:subClassOf :Solution ;
+                rdfs:label "MedicalSupport"@en . 
+#  --------------------------- Class  13------------------------- 
+:Place rdf:type owl:Class; 
+       rdfs:label "Place"@en . 
+#  --------------------------- Class  14------------------------- 
+:EducationalInstitution rdf:type owl:Class; 
+                        rdfs:subClassOf :Place ;
+                        rdfs:label "EducationalInstitution"@en . 
