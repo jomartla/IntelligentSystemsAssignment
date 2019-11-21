@@ -1,0 +1,54 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://webprotege.stanford.edu/project/9HGoMmuH5ip8Ko4idgr11P> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix : 		<http://webprotege.stanford.edu/project/9HGoMmuH5ip8Ko4idgr11P#> .
+@base 			<http://webprotege.stanford.edu/project/9HGoMmuH5ip8Ko4idgr11P> .
+
+<http://webprotege.stanford.edu/project/9HGoMmuH5ip8Ko4idgr11P> rdf:type owl:Ontology ;
+                                                                dc:title "undefined"@en;
+                                                                dc:description "undefined"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 3 ###
+#  --------------------------- Property 0------------------------- 
+<http://webprotege.stanford.edu/R8FRJAfC1F80R1giXWvRCn> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:label "R8FRJAfC1F80R1giXWvRCn"@IRI-based; 
+                                                        rdfs:label "Mark"@en; 
+                                                        rdfs:domain <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt>;
+                                                        rdfs:range xsd:integer . 
+#  --------------------------- Property 1------------------------- 
+<http://webprotege.stanford.edu/RByBtoNvkRzzmpu5oNvtGVk> rdf:type owl:ObjectProperty ;
+                                                         rdfs:label "RByBtoNvkRzzmpu5oNvtGVk"@IRI-based; 
+                                                         rdfs:label "hasCourse"@en; 
+                                                         rdfs:domain <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt>;
+                                                         rdfs:range <http://webprotege.stanford.edu/R9Emtz5XhDMCPWqz9rRxsuf> . 
+#  --------------------------- Property 2------------------------- 
+<http://webprotege.stanford.edu/RzBzXlAS5OeNPEcb0ZznW6> rdf:type owl:ObjectProperty ;
+                                                        rdfs:label "RzBzXlAS5OeNPEcb0ZznW6"@IRI-based; 
+                                                        rdfs:label "hasCourseResult"@en; 
+                                                        rdfs:domain <http://webprotege.stanford.edu/RDEUcpsM9Xb7C8tYNkcBsI4>;
+                                                        rdfs:range <http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> . 
+###  Class Definitions (Number of Classes) 3 ###
+#  --------------------------- Class  0------------------------- 
+<http://webprotege.stanford.edu/R75wY84J58uK4Ad2CzyDozt> rdf:type owl:Class; 
+                                                         rdfs:label "R75wY84J58uK4Ad2CzyDozt"@IRI-based; 
+                                                         rdfs:label "CourseResults"@en . 
+#  --------------------------- Class  1------------------------- 
+<http://webprotege.stanford.edu/R9Emtz5XhDMCPWqz9rRxsuf> rdf:type owl:Class; 
+                                                         rdfs:label "R9Emtz5XhDMCPWqz9rRxsuf"@IRI-based; 
+                                                         rdfs:label "Course"@en . 
+#  --------------------------- Class  2------------------------- 
+<http://webprotege.stanford.edu/RDEUcpsM9Xb7C8tYNkcBsI4> rdf:type owl:Class; 
+                                                         rdfs:label "RDEUcpsM9Xb7C8tYNkcBsI4"@IRI-based; 
+                                                         rdfs:label "Student"@en . 
