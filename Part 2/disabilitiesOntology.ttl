@@ -72,7 +72,7 @@
                      rdfs:range :FinancialSupport . 
 #  --------------------------- Property 10------------------------- 
 :hasPhysicalSupport rdf:type owl:ObjectProperty ;
-                    rdfs:label "hasPhysicalSupport"@en; 
+                    rdfs:label "hasTechnologicalSupport"@en; 
                     rdfs:domain :Disability;
                     rdfs:range :PhysicalSupport . 
 #  --------------------------- Property 11------------------------- 
