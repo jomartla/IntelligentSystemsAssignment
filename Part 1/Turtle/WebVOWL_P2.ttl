@@ -1,0 +1,63 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://webprotege.stanford.edu/project/LPwTdLwiSfli0gAraSVn7> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix : 		<http://webprotege.stanford.edu/project/LPwTdLwiSfli0gAraSVn7#> .
+@base 			<http://webprotege.stanford.edu/project/LPwTdLwiSfli0gAraSVn7> .
+
+<http://webprotege.stanford.edu/project/LPwTdLwiSfli0gAraSVn7> rdf:type owl:Ontology ;
+                                                               dc:title "undefined"@en;
+                                                               dc:description "undefined"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 4 ###
+#  --------------------------- Property 0------------------------- 
+<http://webprotege.stanford.edu/RBNLZ1RKolcGv2Uay5w9nIf> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf undefined;
+                                                         rdfs:label "RBNLZ1RKolcGv2Uay5w9nIf"@IRI-based; 
+                                                         rdfs:label "hasDiet"@en; 
+                                                         rdfs:domain <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx>;
+                                                         rdfs:range <http://webprotege.stanford.edu/R7EvI02ENcXzELrFRZKNb> . 
+#  --------------------------- Property 1------------------------- 
+<http://webprotege.stanford.edu/RCv6gQV7Z0G98dG4cF1semj> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf undefined;
+                                                         rdfs:label "RCv6gQV7Z0G98dG4cF1semj"@IRI-based; 
+                                                         rdfs:label "hasSister"@en; 
+                                                         rdfs:domain <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ>;
+                                                         rdfs:range <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> . 
+#  --------------------------- Property 2------------------------- 
+<http://webprotege.stanford.edu/R7H59vweHJwESrb9ltfGdmK> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:label "R7H59vweHJwESrb9ltfGdmK"@IRI-based; 
+                                                         rdfs:label "WeightChange"@en; 
+                                                         rdfs:domain <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx>;
+                                                         rdfs:range xsd:integer . 
+#  --------------------------- Property 3------------------------- 
+<http://webprotege.stanford.edu/R6uuwyWNUpDYj5OYPlk7Rx> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf undefined;
+                                                        rdfs:label "R6uuwyWNUpDYj5OYPlk7Rx"@IRI-based; 
+                                                        rdfs:label "goingOnDietWithWeightChange"@en; 
+                                                        rdfs:domain <http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ>;
+                                                        rdfs:range <http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> . 
+###  Class Definitions (Number of Classes) 3 ###
+#  --------------------------- Class  0------------------------- 
+<http://webprotege.stanford.edu/R7EvI02ENcXzELrFRZKNb> rdf:type owl:Class; 
+                                                       rdfs:label "R7EvI02ENcXzELrFRZKNb"@IRI-based; 
+                                                       rdfs:label "Diet"@en . 
+#  --------------------------- Class  1------------------------- 
+<http://webprotege.stanford.edu/RC5tqMgjHSSoEPX1Cvd2UlZ> rdf:type owl:Class; 
+                                                         rdfs:label "RC5tqMgjHSSoEPX1Cvd2UlZ"@IRI-based; 
+                                                         rdfs:label "Person"@en . 
+#  --------------------------- Class  2------------------------- 
+<http://webprotege.stanford.edu/RDjSBnOzTwJh3W88jkfaeWx> rdf:type owl:Class; 
+                                                         rdfs:label "RDjSBnOzTwJh3W88jkfaeWx"@IRI-based; 
+                                                         rdfs:label "DietWithWeightChange"@en . 
