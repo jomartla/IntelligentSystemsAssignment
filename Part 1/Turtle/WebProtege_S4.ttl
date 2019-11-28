@@ -12,36 +12,61 @@
 #    Object Properties
 #################################################################
 
+###  http://webprotege.stanford.edu/R8GudLkvRTNoF6lP5P1TRIY
+<http://webprotege.stanford.edu/R8GudLkvRTNoF6lP5P1TRIY> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:label "dubbedInLanguage" .
+
+
+###  http://webprotege.stanford.edu/R8X0xpl7gElKNAMzkykq4gI
+<http://webprotege.stanford.edu/R8X0xpl7gElKNAMzkykq4gI> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:label "belongsToSeason" .
+
+
 ###  http://webprotege.stanford.edu/R916fzPGf0Pm6Z3YO9pJZ85
 <http://webprotege.stanford.edu/R916fzPGf0Pm6Z3YO9pJZ85> rdf:type owl:ObjectProperty ;
                                                          rdfs:subPropertyOf owl:topObjectProperty ;
                                                          rdfs:label "isInterpretedBy" .
 
 
-###  http://webprotege.stanford.edu/R93vxw9TSCrTh2HmG3j7y5p
-<http://webprotege.stanford.edu/R93vxw9TSCrTh2HmG3j7y5p> rdf:type owl:ObjectProperty ;
+###  http://webprotege.stanford.edu/RDsvRyg8YRdngH7bVxZjW2H
+<http://webprotege.stanford.edu/RDsvRyg8YRdngH7bVxZjW2H> rdf:type owl:ObjectProperty ;
                                                          rdfs:subPropertyOf owl:topObjectProperty ;
-                                                         rdfs:label "belongsTo" .
+                                                         rdfs:label "hasTVSerie"^^xsd:string .
 
 
 ###  http://webprotege.stanford.edu/RFikZ9BZrONYZpOUUZw1H2
 <http://webprotege.stanford.edu/RFikZ9BZrONYZpOUUZw1H2> rdf:type owl:ObjectProperty ;
                                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                                        rdfs:label "isDubbedBy" .
+                                                        rdfs:label "hasDubbingActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RwX7MZuCSM6pkYkTklAduv
+<http://webprotege.stanford.edu/RwX7MZuCSM6pkYkTklAduv> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:label "hasSeason" .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://webprotege.stanford.edu/R4LUbqa9jmDnYFThysIrgs
-<http://webprotege.stanford.edu/R4LUbqa9jmDnYFThysIrgs> rdf:type owl:Class ;
-                                                        rdfs:label "TV Show" .
+###  http://webprotege.stanford.edu/R8VHKvRFxaoaimB6QvPQtlk
+<http://webprotege.stanford.edu/R8VHKvRFxaoaimB6QvPQtlk> rdf:type owl:Class ;
+                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R8GudLkvRTNoF6lP5P1TRIY> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RBKqhJLgcVi9ePYMt3Aodpm>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RFikZ9BZrONYZpOUUZw1H2> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RDbI7bfWFncsBVAQiHIDDK>
+                                                                         ] ;
+                                                         rdfs:label "DubbingRelation" .
 
 
 ###  http://webprotege.stanford.edu/R9OkbIIlC3m6JoPRrGRNelx
 <http://webprotege.stanford.edu/R9OkbIIlC3m6JoPRrGRNelx> rdf:type owl:Class ;
-                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R4LUbqa9jmDnYFThysIrgs> ;
                                                          rdfs:label "American TV Serie" .
 
 
@@ -49,18 +74,23 @@
 <http://webprotege.stanford.edu/R9Tji3070xbsFvtzrcUSJP4> rdf:type owl:Class ;
                                                          rdfs:subClassOf owl:Thing ,
                                                                          [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R8X0xpl7gElKNAMzkykq4gI> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RJ245477j4h3sXNcfaqsqe>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
                                                                            owl:onProperty <http://webprotege.stanford.edu/R916fzPGf0Pm6Z3YO9pJZ85> ;
                                                                            owl:someValuesFrom <http://webprotege.stanford.edu/RBD9gvKpMWtZz1gioEDr1Tb>
                                                                          ] ,
                                                                          [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://webprotege.stanford.edu/R93vxw9TSCrTh2HmG3j7y5p> ;
-                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9OkbIIlC3m6JoPRrGRNelx>
-                                                                         ] ,
-                                                                         [ rdf:type owl:Restriction ;
                                                                            owl:onProperty <http://webprotege.stanford.edu/RFikZ9BZrONYZpOUUZw1H2> ;
-                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RDbI7bfWFncsBVAQiHIDDK>
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R8VHKvRFxaoaimB6QvPQtlk>
                                                                          ] ;
                                                          rdfs:label "Character" .
+
+
+###  http://webprotege.stanford.edu/R9Z9vfNgymq1Wqy6eltUgga
+<http://webprotege.stanford.edu/R9Z9vfNgymq1Wqy6eltUgga> rdf:type owl:Class ;
+                                                         rdfs:label "Season" .
 
 
 ###  http://webprotege.stanford.edu/RBD9gvKpMWtZz1gioEDr1Tb
@@ -69,10 +99,28 @@
                                                          rdfs:label "Actor" .
 
 
+###  http://webprotege.stanford.edu/RBKqhJLgcVi9ePYMt3Aodpm
+<http://webprotege.stanford.edu/RBKqhJLgcVi9ePYMt3Aodpm> rdf:type owl:Class ;
+                                                         rdfs:label "Language" .
+
+
 ###  http://webprotege.stanford.edu/RDbI7bfWFncsBVAQiHIDDK
 <http://webprotege.stanford.edu/RDbI7bfWFncsBVAQiHIDDK> rdf:type owl:Class ;
                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RtRrXkv33Md7WTMeIgwm3K> ;
                                                         rdfs:label "Dubbing Actor" .
+
+
+###  http://webprotege.stanford.edu/RJ245477j4h3sXNcfaqsqe
+<http://webprotege.stanford.edu/RJ245477j4h3sXNcfaqsqe> rdf:type owl:Class ;
+                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://webprotege.stanford.edu/RDsvRyg8YRdngH7bVxZjW2H> ;
+                                                                          owl:someValuesFrom <http://webprotege.stanford.edu/R9OkbIIlC3m6JoPRrGRNelx>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://webprotege.stanford.edu/RwX7MZuCSM6pkYkTklAduv> ;
+                                                                          owl:someValuesFrom <http://webprotege.stanford.edu/R9Z9vfNgymq1Wqy6eltUgga>
+                                                                        ] ;
+                                                        rdfs:label "SeasonRelation" .
 
 
 ###  http://webprotege.stanford.edu/RtRrXkv33Md7WTMeIgwm3K
