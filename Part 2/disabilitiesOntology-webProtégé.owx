@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://visualdataweb.org/newOntology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://visualdataweb.org/newOntology/">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en">New ontology description</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en">New ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Disability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DisabilityRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EducationalInstitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EducationalSupport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FinancialSupport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MedicalSupport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MentalTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalSupport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Solution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Treatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDisability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEducationalSupport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFinancialSupport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMedicalSupport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMentalTreatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPhysicalSupport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPhysicalTreatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRightTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAppliedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSuportedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="objectProperty14"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="takesPlaceAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="aidedEducationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="amountOfMoney"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="cause"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="degreeDisability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="disablityType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isInherited"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isPublic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="periodicity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="typeOfStructure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="typeOfSympom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="typeOfTreatment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R70kkN9AJuaXT5iDdNM1myq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7eo4qclPejB3y6IwThIn6G"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8Kwqda7McVJtqYlmBmdAkl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8VLpUMFfqebFjmYG8iP4Mw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R97n6joXNT5YftttfeTPjA2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9DdbVLAteq5llGpVDzdfFW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cb3fFpKCwWgVlLfbYpKcw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB74jIPXaELimUqTxgf1y8F"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCUIXI6Trfz4eKIy4n1iKZA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDmk8ydu9Ca8NNA3JPVrzI3"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="EducationalInstitution"/>
+        <Class IRI="Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EducationalSupport"/>
+        <Class IRI="Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FinancialSupport"/>
+        <Class IRI="Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MedicalSupport"/>
+        <Class IRI="Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MentalTreatment"/>
+        <Class IRI="Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhysicalSupport"/>
+        <Class IRI="Solution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhysicalTreatment"/>
+        <Class IRI="Treatment"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="Symptom"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R70kkN9AJuaXT5iDdNM1myq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MentalTreatment"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7eo4qclPejB3y6IwThIn6G"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MedicalSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8Kwqda7McVJtqYlmBmdAkl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="FinancialSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8VLpUMFfqebFjmYG8iP4Mw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="DisabilityRelation"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R97n6joXNT5YftttfeTPjA2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="EducationalSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9DdbVLAteq5llGpVDzdfFW"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Disability"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhysicalTreatment"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cb3fFpKCwWgVlLfbYpKcw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PhysicalSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB74jIPXaELimUqTxgf1y8F"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="EducationalInstitution"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCUIXI6Trfz4eKIy4n1iKZA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDmk8ydu9Ca8NNA3JPVrzI3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRightTo"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8Kwqda7McVJtqYlmBmdAkl"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cb3fFpKCwWgVlLfbYpKcw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasDisability"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R97n6joXNT5YftttfeTPjA2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSymptom"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R97n6joXNT5YftttfeTPjA2"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R70kkN9AJuaXT5iDdNM1myq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="takesPlaceAt"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9DdbVLAteq5llGpVDzdfFW"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RCUIXI6Trfz4eKIy4n1iKZA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasEducationalSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9DdbVLAteq5llGpVDzdfFW"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFinancialSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8VLpUMFfqebFjmYG8iP4Mw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMedicalSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R8Kwqda7McVJtqYlmBmdAkl"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMentalTreatment"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R7eo4qclPejB3y6IwThIn6G"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPhysicalSupport"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RB74jIPXaELimUqTxgf1y8F"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPhysicalTreatment"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R9cb3fFpKCwWgVlLfbYpKcw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasDisability"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/RDmk8ydu9Ca8NNA3JPVrzI3"/>
+        <NamedIndividual IRI="http://webprotege.stanford.edu/R97n6joXNT5YftttfeTPjA2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDisability"/>
+        <Class IRI="DisabilityRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEducationalSupport"/>
+        <Class IRI="Disability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFinancialSupport"/>
+        <Class IRI="Disability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMedicalSupport"/>
+        <Class IRI="Disability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMentalTreatment"/>
+        <Class IRI="Disability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPhysicalSupport"/>
+        <Class IRI="Disability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPhysicalTreatment"/>
+        <Class IRI="Disability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRightTo"/>
+        <Class IRI="MedicalSupport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSymptom"/>
+        <Class IRI="DisabilityRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAppliedTo"/>
+        <Class IRI="Treatment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSuportedBy"/>
+        <Class IRI="Solution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="objectProperty14"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="takesPlaceAt"/>
+        <Class IRI="EducationalSupport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDisability"/>
+        <Class IRI="Disability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEducationalSupport"/>
+        <Class IRI="EducationalSupport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFinancialSupport"/>
+        <Class IRI="FinancialSupport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMedicalSupport"/>
+        <Class IRI="MedicalSupport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMentalTreatment"/>
+        <Class IRI="MentalTreatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPhysicalSupport"/>
+        <Class IRI="PhysicalSupport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPhysicalTreatment"/>
+        <Class IRI="PhysicalTreatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRightTo"/>
+        <Class IRI="Treatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSymptom"/>
+        <Class IRI="Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isAppliedTo"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSuportedBy"/>
+        <Class IRI="Law"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="objectProperty14"/>
+        <Class IRI="DisabilityRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="takesPlaceAt"/>
+        <Class IRI="EducationalInstitution"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="aidedEducationType"/>
+        <Class IRI="EducationalSupport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="amountOfMoney"/>
+        <Class IRI="FinancialSupport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="cause"/>
+        <Class IRI="Disability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="degreeDisability"/>
+        <Class IRI="Disability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="description"/>
+        <Class IRI="Law"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="disablityType"/>
+        <Class IRI="Disability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="duration"/>
+        <Class IRI="Treatment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCure"/>
+        <Class IRI="Disability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isInherited"/>
+        <Class IRI="Disability"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isPublic"/>
+        <Class IRI="PhysicalSupport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="periodicity"/>
+        <Class IRI="FinancialSupport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="typeOfStructure"/>
+        <Class IRI="PhysicalSupport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="typeOfSympom"/>
+        <Class IRI="Symptom"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="typeOfTreatment"/>
+        <Class IRI="Treatment"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="aidedEducationType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="amountOfMoney"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="cause"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="degreeDisability"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="disablityType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="duration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCure"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isInherited"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isPublic"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="periodicity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="typeOfStructure"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="typeOfSympom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="typeOfTreatment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Disability</IRI>
+        <Literal xml:lang="en">Disability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DisabilityRelation</IRI>
+        <Literal xml:lang="en">DisabilityRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EducationalInstitution</IRI>
+        <Literal xml:lang="en">EducationalInstitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EducationalSupport</IRI>
+        <Literal xml:lang="en">EducationalSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FinancialSupport</IRI>
+        <Literal xml:lang="en">FinancialSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Law</IRI>
+        <Literal xml:lang="en">Law</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MedicalSupport</IRI>
+        <Literal xml:lang="en">MedicalSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MentalTreatment</IRI>
+        <Literal xml:lang="en">MentalTreatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PhysicalSupport</IRI>
+        <Literal xml:lang="en">TechonologicSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PhysicalTreatment</IRI>
+        <Literal xml:lang="en">PhysicalTreatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Place</IRI>
+        <Literal xml:lang="en">Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Solution</IRI>
+        <Literal xml:lang="en">LegalSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Symptom</IRI>
+        <Literal xml:lang="en">Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Treatment</IRI>
+        <Literal xml:lang="en">Treatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>aidedEducationType</IRI>
+        <Literal xml:lang="en">aidedEducationType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>amountOfMoney</IRI>
+        <Literal xml:lang="en">amountOfMoney</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>cause</IRI>
+        <Literal xml:lang="en">cause</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>degreeDisability</IRI>
+        <Literal xml:lang="en">degreeDisability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>description</IRI>
+        <Literal xml:lang="en">lawDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>disablityType</IRI>
+        <Literal xml:lang="en">disablityType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>duration</IRI>
+        <Literal xml:lang="en">duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasCure</IRI>
+        <Literal xml:lang="en">hasCure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDisability</IRI>
+        <Literal xml:lang="en">hasDisability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasEducationalSupport</IRI>
+        <Literal xml:lang="en">hasEducationalSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasFinancialSupport</IRI>
+        <Literal xml:lang="en">hasFinancialSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMedicalSupport</IRI>
+        <Literal xml:lang="en">hasMedicalSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMentalTreatment</IRI>
+        <Literal xml:lang="en">hasMentalTreatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPhysicalSupport</IRI>
+        <Literal xml:lang="en">hasTechnologicalSupport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPhysicalTreatment</IRI>
+        <Literal xml:lang="en">hasPhysicalTreatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasRightTo</IRI>
+        <Literal xml:lang="en">hasRightTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSymptom</IRI>
+        <Literal xml:lang="en">hasSymptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isAppliedTo</IRI>
+        <Literal xml:lang="en">isAppliedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isInherited</IRI>
+        <Literal xml:lang="en">isInherited</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPublic</IRI>
+        <Literal xml:lang="en">isPublic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isSuportedBy</IRI>
+        <Literal xml:lang="en">isSuportedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>objectProperty14</IRI>
+        <Literal xml:lang="en">newObjectProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>periodicity</IRI>
+        <Literal xml:lang="en">periodicity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>takesPlaceAt</IRI>
+        <Literal xml:lang="en">takesPlaceAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>typeOfStructure</IRI>
+        <Literal xml:lang="en">typeOfTechnology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>typeOfSympom</IRI>
+        <Literal xml:lang="en">typeOfSymptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>typeOfTreatment</IRI>
+        <Literal xml:lang="en">typeOfTreatment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R70kkN9AJuaXT5iDdNM1myq</IRI>
+        <Literal xml:lang="en">LossOfMovement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R7eo4qclPejB3y6IwThIn6G</IRI>
+        <Literal xml:lang="en">Psychotherapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8Kwqda7McVJtqYlmBmdAkl</IRI>
+        <Literal xml:lang="en">MedicalSupport1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8VLpUMFfqebFjmYG8iP4Mw</IRI>
+        <Literal xml:lang="en">StateEconomicAid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R97n6joXNT5YftttfeTPjA2</IRI>
+        <Literal xml:lang="en">DisabilityRelation1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9DdbVLAteq5llGpVDzdfFW</IRI>
+        <Literal xml:lang="en">IndividualTeaching</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9De7If6EcvKwTfJZSs26pM</IRI>
+        <Literal xml:lang="en">Tetraplegia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9cb3fFpKCwWgVlLfbYpKcw</IRI>
+        <Literal>Physiotherapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RB74jIPXaELimUqTxgf1y8F</IRI>
+        <Literal xml:lang="en">ElectricWheelchair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RCUIXI6Trfz4eKIy4n1iKZA</IRI>
+        <Literal xml:lang="en">Harvard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDmk8ydu9Ca8NNA3JPVrzI3</IRI>
+        <Literal xml:lang="en">Paco</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+
