@@ -1,19 +1,20 @@
 # Description of the ontology: 
 
-* A person can have a disability which presents some symptomp.
-* There are different types of symptomps.
-* here are different grades of disabilities, different types of disabilities (mental or physical), can be inherited and can be cured.
+* A person can have a disability which presents some symptoms.
+* There are different types of symptoms.
+* There are different degrees of disabilities, different types of disabilities (mental or physical), can be inherited, can be cured, and has some cause.
 * A disability can have different types of legal support: financial, educational, medical or technological.
-* All this supports are suported by a law.
+* All this supports are supported by a law.
 * Financial support is provided in terms of money each period of time.
-* Technological support are either infrastructures or mechanisms that help people with disablities in their daily basis.
+* Technological support are either infrastructures or mechanisms that help people with disabilities in their daily basis.
+* Technological support can be public (lifts or public parking for persons with disabilities in public places) or private (leg prosthesis).
 * Educational support is related to provide help in education for people with special needs.
+* Educational support is imparted in different educational institutions.
 * Medical support guarantees a right to have a treatment.
-* Technological support can be public (lifts or public parking for persons with disabilities in public places) or private (leg prothesis).
-* Educational support is inparted in different educational institutions.
 * Depending on the type of disability, there are physical or mental treatments.
 * A treatment has a duration of time and there are different types of treatments in both groups (mental and physical).
 * This treatments can be applied to persons.
+
 
 
 
