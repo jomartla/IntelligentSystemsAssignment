@@ -2,7 +2,7 @@
 ###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
 #################################################################
 
-@prefix : 		<http://webprotege.stanford.edu/project/Lik9lH3JipmZik0FVIN16> .
+@prefix : 		<http://visualdataweb.org/newOntology/> .
 @prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: 		<http://www.w3.org/2002/07/owl#> .
@@ -12,51 +12,40 @@
 @prefix wot: 		<http://xmlns.com/wot/0.1/> .
 @prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
-@prefix : 		<http://webprotege.stanford.edu/project/Lik9lH3JipmZik0FVIN16#> .
-@base 			<http://webprotege.stanford.edu/project/Lik9lH3JipmZik0FVIN16> .
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@base 			<http://visualdataweb.org/newOntology/> .
 
-<http://webprotege.stanford.edu/project/Lik9lH3JipmZik0FVIN16> rdf:type owl:Ontology ;
-                                                               dc:title "undefined"@en;
-                                                               dc:description "undefined"@en . 
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
 #################################################################
 
 ###  Property Definitions (Number of Property) 3 ###
 #  --------------------------- Property 0------------------------- 
-<http://webprotege.stanford.edu/R7b2ObjfsyB0BFQ20jN1Y3y> rdf:type owl:ObjectProperty ;
-                                                        rdfs:subPropertyOf undefined;
-                                                         rdfs:label "R7b2ObjfsyB0BFQ20jN1Y3y"@IRI-based; 
-                                                         rdfs:label "hasValue"@en; 
-                                                         rdfs:domain <http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY>;
-                                                         rdfs:range <http://webprotege.stanford.edu/RVy5rRHRmflLNU7FhNXjyR> . 
+:hasValue rdf:type owl:ObjectProperty ;
+          rdfs:label "hasValue"@en; 
+          rdfs:domain :UnemploymentRateRelation;
+          rdfs:range :UnemploymentRate . 
 #  --------------------------- Property 1------------------------- 
-<http://webprotege.stanford.edu/RCFjrYaOlpcFJUBU3EjdF3> rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf undefined;
-                                                        rdfs:label "RCFjrYaOlpcFJUBU3EjdF3"@IRI-based; 
-                                                        rdfs:label "hasTrend"@en; 
-                                                        rdfs:domain <http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY>;
-                                                        rdfs:range <http://webprotege.stanford.edu/RDVkBT27w86FSCAiKvwKAnw> . 
+:hasTrend rdf:type owl:ObjectProperty ;
+          rdfs:label "hasTrend"@en; 
+          rdfs:domain :UnemploymentRateRelation;
+          rdfs:range :Trend . 
 #  --------------------------- Property 2------------------------- 
-<http://webprotege.stanford.edu/R7wzcqaabVaZKwRKjxM7cwL> rdf:type owl:ObjectProperty ;
-                                                        rdfs:subPropertyOf undefined;
-                                                        rdfs:subPropertyOf <http://webprotege.stanford.edu/R7wzcqaabVaZKwRKjxM7cwL>;
-                                                         rdfs:label "R7wzcqaabVaZKwRKjxM7cwL"@IRI-based; 
-                                                         rdfs:label "hasUnemploymentRate"@en; 
-                                                         rdfs:domain <http://webprotege.stanford.edu/R9Mxh6aug8R3Qyjt2l8SStI>;
-                                                         rdfs:range <http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY> . 
+:hasUnemploymentRate rdf:type owl:ObjectProperty ;
+                     rdfs:label "hasUnemploymentRate"@en; 
+                     rdfs:domain :Country;
+                     rdfs:range :UnemploymentRateRelation . 
 ###  Class Definitions (Number of Classes) 4 ###
 #  --------------------------- Class  0------------------------- 
-<http://webprotege.stanford.edu/RVy5rRHRmflLNU7FhNXjyR> rdf:type owl:Class; 
-                                                        rdfs:label "RVy5rRHRmflLNU7FhNXjyR"@IRI-based; 
-                                                        rdfs:label "UnemploymentRate"@en . 
+:Country rdf:type owl:Class; 
+         rdfs:label "Country"@en . 
 #  --------------------------- Class  1------------------------- 
-<http://webprotege.stanford.edu/RdxVb3IhYZ4w7hy8KHonaY> rdf:type owl:Class; 
-                                                        rdfs:label "RdxVb3IhYZ4w7hy8KHonaY"@IRI-based; 
-                                                        rdfs:label "UnemploymentRateRelation"@en . 
+:UnemploymentRateRelation rdf:type owl:Class; 
+                          rdfs:label "UnemploymentRate"@en . 
 #  --------------------------- Class  2------------------------- 
-<http://webprotege.stanford.edu/RDVkBT27w86FSCAiKvwKAnw> rdf:type owl:Class; 
-                                                         rdfs:label "RDVkBT27w86FSCAiKvwKAnw"@IRI-based; 
-                                                         rdfs:label "Trend"@en . 
+:UnemploymentRate rdf:type owl:Class; 
+                  rdfs:label "UnemploymentRate"@en . 
 #  --------------------------- Class  3------------------------- 
-<http://webprotege.stanford.edu/R9Mxh6aug8R3Qyjt2l8SStI> rdf:type owl:Class; 
-                                                         rdfs:label "R9Mxh6aug8R3Qyjt2l8SStI"@IRI-based; 
-                                                         rdfs:label "Country"@en . 
+:Trend rdf:type owl:Class; 
+       rdfs:label "Trend"@en . 
