@@ -22,9 +22,16 @@
                                                          rdfs:label "isRecordedWith"@en .
 
 
-###  http://webprotege.stanford.edu/RCvvKiC73c2MjpkcQTPf11o
-<http://webprotege.stanford.edu/RCvvKiC73c2MjpkcQTPf11o> rdf:type owl:ObjectProperty ;
-                                                         rdfs:label "hasAuthor"@en .
+###  http://webprotege.stanford.edu/RQjhsnbtrAdYjiSIT3KG40
+<http://webprotege.stanford.edu/RQjhsnbtrAdYjiSIT3KG40> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:label "hasAlbum"@en .
+
+
+###  http://webprotege.stanford.edu/Rehzzad83qSYh6hz3J1fXt
+<http://webprotege.stanford.edu/Rehzzad83qSYh6hz3J1fXt> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:label "hasCreatedAn"@en .
 
 
 #################################################################
@@ -38,18 +45,6 @@
 
 ###  http://webprotege.stanford.edu/R9NYbpUzYLqzrC0FERgOxOD
 <http://webprotege.stanford.edu/R9NYbpUzYLqzrC0FERgOxOD> rdf:type owl:Class ;
-                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://webprotege.stanford.edu/R8q20bPD4QhzIBwq3R6d69k> ;
-                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R12viNMdTtBewhH4SjAc7k>
-                                                                         ] ,
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://webprotege.stanford.edu/RBM8d37nB7RbVLvTnNOKn99> ;
-                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9pNIIJ5KzzWONG12xN57R0>
-                                                                         ] ,
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://webprotege.stanford.edu/RCvvKiC73c2MjpkcQTPf11o> ;
-                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RByZT1bDg7GXEIUF6yYUpAe>
-                                                                         ] ;
                                                          rdfs:label "Album"@en .
 
 
@@ -60,7 +55,28 @@
 
 ###  http://webprotege.stanford.edu/RByZT1bDg7GXEIUF6yYUpAe
 <http://webprotege.stanford.edu/RByZT1bDg7GXEIUF6yYUpAe> rdf:type owl:Class ;
+                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/Rehzzad83qSYh6hz3J1fXt> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/RCfKlExayk4nSwNEJJPxIkx>
+                                                                         ] ;
                                                          rdfs:label "Singer"@en .
+
+
+###  http://webprotege.stanford.edu/RCfKlExayk4nSwNEJJPxIkx
+<http://webprotege.stanford.edu/RCfKlExayk4nSwNEJJPxIkx> rdf:type owl:Class ;
+                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/R8q20bPD4QhzIBwq3R6d69k> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R12viNMdTtBewhH4SjAc7k>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RBM8d37nB7RbVLvTnNOKn99> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9pNIIJ5KzzWONG12xN57R0>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://webprotege.stanford.edu/RQjhsnbtrAdYjiSIT3KG40> ;
+                                                                           owl:someValuesFrom <http://webprotege.stanford.edu/R9NYbpUzYLqzrC0FERgOxOD>
+                                                                         ] ;
+                                                         rdfs:label "AlbumRelation"@en .
 
 
 ###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
