@@ -1,5 +1,5 @@
 #################################################################
-###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.3)  http://visualdataweb.de/webvowl/   ###
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
 #################################################################
 
 @prefix : 		<http://visualdataweb.org/newOntology/> .
@@ -12,6 +12,7 @@
 @prefix wot: 		<http://xmlns.com/wot/0.1/> .
 @prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix : 		<http://visualdataweb.org/newOntology/> .
 @base 			<http://visualdataweb.org/newOntology/> .
 
 <http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
@@ -19,64 +20,93 @@
                                         dc:description "New ontology description"@en . 
 #################################################################
 
-###  Property Definitions (Number of Property) 8 ###
+###  Property Definitions (Number of Property) 10 ###
 #  --------------------------- Property 0------------------------- 
-:price rdf:type owl:DatatypeProperty ;
-       rdfs:label "price"@en; 
-       rdfs:domain :OffersRoom;
-       rdfs:range xsd:double . 
-#  --------------------------- Property 1------------------------- 
-:roomID rdf:type owl:DatatypeProperty ;
-        rdfs:label "roomID"@en; 
-        rdfs:domain :OffersRoom;
-        rdfs:range xsd:string . 
-#  --------------------------- Property 2------------------------- 
-:offers rdf:type owl:ObjectProperty ;
-        rdfs:label "offersRoomRental"@en; 
-        rdfs:domain :Hotel;
-        rdfs:range :RoomRentalCustomerRelation . 
-#  --------------------------- Property 3------------------------- 
 :offeredTo rdf:type owl:ObjectProperty ;
+           rdfs:label "offeredTo"@IRI-based; 
            rdfs:label "hasCustomer"@en; 
            rdfs:domain :RoomRentalCustomerRelation;
            rdfs:range :Customer . 
-#  --------------------------- Property 4------------------------- 
-:hasRoomRentalService rdf:type owl:ObjectProperty ;
-                      rdfs:label "hasRoomRentalService"@en; 
-                      rdfs:domain :RoomRentalCustomerRelation;
-                      rdfs:range :OffersRoom . 
-#  --------------------------- Property 5------------------------- 
-:hasTimePeriod rdf:type owl:ObjectProperty ;
-               rdfs:label "hasTimePeriod"@en; 
-               rdfs:domain :OffersRoom;
-               rdfs:range :TimePeriod . 
-#  --------------------------- Property 6------------------------- 
+#  --------------------------- Property 1------------------------- 
 :startTime rdf:type owl:DatatypeProperty ;
+           rdfs:label "startTime"@IRI-based; 
            rdfs:label "startTime"@en; 
            rdfs:domain :TimePeriod;
            rdfs:range xsd:string . 
-#  --------------------------- Property 7------------------------- 
+#  --------------------------- Property 2------------------------- 
+:hasTimePeriod rdf:type owl:ObjectProperty ;
+               rdfs:label "hasTimePeriod"@IRI-based; 
+               rdfs:label "hasTimePeriod"@en; 
+               rdfs:domain :OffersRoom;
+               rdfs:range :TimePeriod . 
+#  --------------------------- Property 3------------------------- 
+:roomID rdf:type owl:DatatypeProperty ;
+        rdfs:label "roomID"@IRI-based; 
+        rdfs:label "roomID"@en; 
+        rdfs:domain :OffersRoom;
+        rdfs:range xsd:string . 
+#  --------------------------- Property 4------------------------- 
 :endTime rdf:type owl:DatatypeProperty ;
+         rdfs:label "endTime"@IRI-based; 
          rdfs:label "endTime"@en; 
          rdfs:domain :TimePeriod;
          rdfs:range xsd:string . 
-###  Class Definitions (Number of Classes) 6 ###
+#  --------------------------- Property 5------------------------- 
+:offers rdf:type owl:ObjectProperty ;
+        rdfs:label "offers"@IRI-based; 
+        rdfs:label "offersRoomRental"@en; 
+        rdfs:domain :Hotel;
+        rdfs:range :RoomRentalCustomerRelation . 
+#  --------------------------- Property 6------------------------- 
+:hasRoomRentalService rdf:type owl:ObjectProperty ;
+                      rdfs:label "hasRoomRentalService"@IRI-based; 
+                      rdfs:label "hasRoomRentalService"@en; 
+                      rdfs:domain :RoomRentalCustomerRelation;
+                      rdfs:range :OffersRoom . 
+#  --------------------------- Property 7------------------------- 
+:hasPrice rdf:type owl:ObjectProperty ;
+          rdfs:label "hasPrice"@en; 
+          rdfs:domain :OffersRoom;
+          rdfs:range :PriceQuantityAndBadge . 
+#  --------------------------- Property 8------------------------- 
+:currency rdf:type owl:DatatypeProperty ;
+          rdfs:label "quantity"@en; 
+          rdfs:domain :PriceQuantityAndBadge;
+          rdfs:range xsd:double . 
+#  --------------------------- Property 9------------------------- 
+:hasCurrency rdf:type owl:ObjectProperty ;
+             rdfs:label "hasCurrency"@en; 
+             rdfs:domain :PriceQuantityAndBadge;
+             rdfs:range :Currency . 
+###  Class Definitions (Number of Classes) 8 ###
 #  --------------------------- Class  0------------------------- 
 :Hotel rdf:type owl:Class; 
+       rdfs:label "Hotel"@IRI-based; 
        rdfs:label "Hotel"@en . 
 #  --------------------------- Class  1------------------------- 
-:Person rdf:type owl:Class; 
-        rdfs:label "Person"@en . 
+:RoomRentalCustomerRelation rdf:type owl:Class; 
+                            rdfs:label "RoomRentalCustomerRelation"@IRI-based; 
+                            rdfs:label "RoomRentalCustomerRelation"@en . 
 #  --------------------------- Class  2------------------------- 
+:Person rdf:type owl:Class; 
+        rdfs:label "Person"@IRI-based; 
+        rdfs:label "Person"@en . 
+#  --------------------------- Class  3------------------------- 
 :Customer rdf:type owl:Class; 
           rdfs:subClassOf :Person ;
+          rdfs:label "Customer"@IRI-based; 
           rdfs:label "Customer"@en . 
-#  --------------------------- Class  3------------------------- 
-:OffersRoom rdf:type owl:Class; 
-            rdfs:label "RoomRentalService"@en . 
 #  --------------------------- Class  4------------------------- 
-:RoomRentalCustomerRelation rdf:type owl:Class; 
-                            rdfs:label "RoomRentalCustomerRelation"@en . 
+:OffersRoom rdf:type owl:Class; 
+            rdfs:label "OffersRoom"@IRI-based; 
+            rdfs:label "RoomRentalService"@en . 
 #  --------------------------- Class  5------------------------- 
 :TimePeriod rdf:type owl:Class; 
+            rdfs:label "TimePeriod"@IRI-based; 
             rdfs:label "TimePeriod"@en . 
+#  --------------------------- Class  6------------------------- 
+:PriceQuantityAndBadge rdf:type owl:Class; 
+                       rdfs:label "Price"@en . 
+#  --------------------------- Class  7------------------------- 
+:Currency rdf:type owl:Class; 
+          rdfs:label "Currency"@en . 
